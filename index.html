@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Paint Calculator</title>
+    <meta charset="UTF-8" />
+    <!--falta viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet">
+    <!--linkeamos la fuente de google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <h1>Paint Calculator</h1>
+
+        <div class="contenedor">
+            <h2>Complete los datos</h2>
+            <!--datos personales-->
+            <div class="fila">
+                <div class="columna-label">
+                    <label>Alto</label>
+                </div>
+                <div class="columna-input">
+                    <input id="alto" type="number" min="1" max="999" placeholder="ingrese un numero" />
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna-label">
+                    <label>Ancho</label>
+                </div>
+                <div class="columna-input">
+                    <input id="ancho" type="number" min="1" max="999" placeholder="ingrese un numero" />
+                </div>
+            </div>
+            <div class="fila-boton">
+                <button id="click" class="boton-sumar">Calcular</button>
+                <button id="limpiar" class="boton-limpiar">Limpiar</button>
+            </div>
+
+            <div class="fila">
+                <div class="columna-label">
+                    <label>Galones </label>
+                </div>
+                <div class="columna-input">
+                    <input id="total" type="number" readonly placeholder="resultado" />
+                </div>
+            </div>
+        </div>
+        <div></div>
+
+
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
